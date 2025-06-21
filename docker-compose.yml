@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  webserver1:
+    container_name: webserver1
+    build:
+      context: .
+    ports:
+      - "3001:${PORT}"
+    environment:
+      APP_NAME: webserver1
+      PORT: ${PORT}
+
+  webserver2:
+    container_name: webserver2
+    build:
+      context: .
+    ports:
+      - "3002:${PORT}"
+    environment:
+      APP_NAME: webserver2
+      PORT: ${PORT}
+
+  webserver3:
+    container_name: webserver3
+    build:
+      context: .
+    ports:
+      - "3003:${PORT}"
+    environment:
+      APP_NAME: webserver3
+      PORT: ${PORT}

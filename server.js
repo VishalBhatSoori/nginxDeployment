@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const appName = process.env.APP_NAME
+const appName=process.env.APP_NAME;
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
@@ -13,5 +13,5 @@ app.use('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`${appName} is listening on port ${port}`);
+    console.log(`${appName} web server is listening on port ${port}`);
 });
