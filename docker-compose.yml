@@ -1,5 +1,5 @@
 #is version 3.8 really required
-version: "3.8"
+
 
 services:
   webserver1:
